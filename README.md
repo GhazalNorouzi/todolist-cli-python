@@ -17,11 +17,11 @@ A simple command-line task management program using Python and SQLite.
 ## Project Structure
 
 
-├── db.py # Database management and connection
-├── task.py # Tasks class with CRUD methods
-├── cli.py # Command-line interface
-├── main.py # Entry point of the program
-└── README.md # Project documentation
+ db.py # Database management and connection
+ task.py # Tasks class with CRUD methods
+ cli.py # Command-line interface
+ main.py # Entry point of the program
+ README.md # Project documentation
 
 
 ---
