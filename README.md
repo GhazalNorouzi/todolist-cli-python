@@ -1,98 +1,82 @@
-# To-Do CLI App
+# To-Do List CLI App mit Python & SQLite
 
-A simple command-line task management program using Python and SQLite.
-
----
-
-## Features
-
-- Add a new task
-- Show all tasks
-- Edit an existing task
-- Delete a task
-- Store tasks in SQLite database
+Dieses Projekt ist eine Kommandozeilen-Anwendung (CLI), die es dem Benutzer ermöglicht, seine täglichen Aufgaben zu verwalten. Die Aufgaben werden in einer SQLite-Datenbank gespeichert.
+Das Projekt demonstriert grundlegende Python-Kenntnisse, modulare Programmierung und den Umgang mit Datenbanken.
 
 ---
 
-## Project Structure
+## Funktionen
+- Aufgaben hinzufügen, anzeigen, bearbeiten und löschen (CRUD)
+- Speicherung der Aufgaben in SQLite
+- Modularer Aufbau: separate Dateien für Datenbank, Logik und CLI
+- Einfache Bedienung über die Kommandozeile
+---
+
+## Projektstruktur
 
 ```
 .
  
-├── db.py # Database management and connection
-├── task.py # Tasks class with CRUD methods
-├── cli.py # Command-line interface
-├── main.py # Entry point of the program
-└── README.md # Project documentation
+├── main.py     # Einstiegspunkt der Anwendung
+├── cli.py      # Kommandozeilen-Interface
+├── task.py     # Logik zur Aufgabenverwaltung
+├── db.py       # Verwaltung der SQLite-Datenbank
+└── README.md   # Project documentation
 
 ```
 
 ---
 
-## Installation & Usage
+## Installation & Ausführung
 
-1. **Clone the repository**
+1. **Repository klonen**
 
 ```bash
-git clone <REPO_URL>
-cd <REPO_FOLDER>
+git clone https://github.com/GhazalNorouzi/todolist-cli-python.git
+cd todolist-cli-python
 ```
 
-2. **Check Python installation**
+2. **Abhängigkeiten installieren**
    
 ```bash
-python --version
+pip install -r requirements.txt
 ```
 
-3. **Create the database table**
+3. **Anwendung starten**
    
-```python
-from db import create_table
-create_table()
-```
-
-4. **Run the program**
-
 ```bash
 python main.py
 ```
 
-5. **Use the CLI**
-
-Enter the option number (1-5) to interact with the program.
-
-**Example CLI:**
+**Beispielhafte Nutzung:**
 
 ```text
-1. Add Task
-2. Show Tasks
-3. Edit Task
-4. Delete Task
-5. Exit
+> python main.py
+1. Aufgabe hinzufügen
+2. Aufgaben anzeigen
+3. Aufgabe bearbeiten
+4. Aufgabe löschen
 ```
 
 
-## Technical Notes
+## Fähigkeiten
 
 
-Database: SQLite
+Python Grundlagen & OOP
 
-Data management: Through the Tasks class
+SQLite Datenbank & CRUD Operationen
 
-User Interface: CLI (Command-Line Interface)
+Modularer Codeaufbau
 
-Operations: All CRUD operations implemented via class methods
-
-
+CLI-Anwendungen
 
 
-## How to Upload Project via Git (if using local repo)
 
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin <REPO_URL>
-git push -u origin main
-```
+
+## Zukünftige Verbesserungen (optional)
+
+Unit-Tests und Integrationstests hinzufügen
+
+REST API für Web-Zugriff implementieren
+
+Benutzer-Authentifizierung und Multi-User-Funktionalität
